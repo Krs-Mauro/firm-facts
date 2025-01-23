@@ -1,22 +1,54 @@
 .card {
   display: flex;
+  flex-direction: column;
   width: 364px;
-  align-items: flex-start;
+  height: 322px;
+  justify-content: center;
+  align-items: center;
   padding: 24px;
-
+  background-color: white;
   min-height: 200px;
   transition: background-color 0.3s, border-color 0.3s;
+  position: relative;
 
-  .defaultCard {
-    @extend .card;
-    background-color: white;
+  .subCard {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
+}
 
-  .variantCard {
-    background: #07c06a;
-  }
+.verticalCard {
+  grid-row: span 2;
+  height: 100%;
+}
 
-  .border {
-    border: 15px solid #07c06a;
-  }
+.cursorIcon {
+  display: block;
+  position: absolute;
+  left: 190px;
+  top: 250px;
+  transform: none;
+}
+
+.text {
+  color: black;
+}
+
+.defaultCard {
+  background-color: white;
+}
+
+.variantBackground {
+  background-color: #07c06a;
+}
+
+.variantBorder {
+  border: 15px solid #07c06a;
+}
+
+.variantPosition {
+  justify-content: start;
+  padding-top: 40px;
 }

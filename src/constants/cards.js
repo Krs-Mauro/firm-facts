@@ -6,13 +6,13 @@ const CARDS = [
     position: 'default',
     text: null,
     cursorIcon: false,
+    vertical: true,
     button: {
       text: 'This is a two line button that terminates with...',
       icon: true,
       background: 'default',
       border: 'default',
       disabled: false,
-      cursor: 'default',
     },
   },
   {
@@ -28,7 +28,6 @@ const CARDS = [
       background: 'variant',
       border: 'variant',
       disabled: false,
-      cursor: 'default',
     },
   },
   {
@@ -44,7 +43,6 @@ const CARDS = [
       background: 'default',
       border: 'default',
       disabled: false,
-      cursor: 'default',
     },
   },
   {
@@ -60,7 +58,6 @@ const CARDS = [
       background: 'default',
       border: 'default',
       disabled: false,
-      cursor: 'default',
     },
   },
   {
@@ -76,7 +73,6 @@ const CARDS = [
       background: 'default',
       border: 'default',
       disabled: false,
-      cursor: 'default',
     },
   },
   {
@@ -92,7 +88,6 @@ const CARDS = [
       background: 'default',
       border: 'default',
       disabled: true,
-      cursor: 'default',
     },
   },
   {
