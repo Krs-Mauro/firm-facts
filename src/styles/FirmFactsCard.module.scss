@@ -1,10 +1,10 @@
-@import './fluid-size.module';
+@use './fluid-size.module' as fluid;
 
 .card {
   display: flex;
   flex-direction: column;
-  width: fluid-size(166, 364);
-  height: fluid-size(147, 322);
+  width: fluid.fluid-size(166, 364);
+  height: fluid.fluid-size(147, 322);
   align-items: center;
   padding: 24px;
   background-color: white;

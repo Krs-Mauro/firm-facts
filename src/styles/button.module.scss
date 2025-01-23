@@ -1,13 +1,13 @@
-@import './fluid-size.module';
+@use './fluid-size.module' as fluid;
 
 .button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: fluid-size(9, 19);
-  width: fluid-size(142, 310);
-  height: fluid-size(32, 70);
+  font-size: fluid.fluid-size(9, 19);
+  width: fluid.fluid-size(142, 310);
+  height: fluid.fluid-size(32, 70);
   padding: 12px 16px;
   gap: 8px;
   border-radius: 100px;

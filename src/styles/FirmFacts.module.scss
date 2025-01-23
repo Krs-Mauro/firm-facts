@@ -1,4 +1,4 @@
-@import './fluid-size.module';
+@use './fluid-size.module' as fluid;
 
 .container {
   max-width: 1680px;
@@ -17,7 +17,7 @@
     color: white;
     font-style: normal;
     font-weight: 400;
-    font-size: fluid-size(27, 60);
+    font-size: fluid.fluid-size(27, 60);
     line-height: 66px;
   }
 
@@ -30,7 +30,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: fluid-size(11, 24);
+  gap: fluid.fluid-size(11, 24);
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
