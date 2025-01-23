@@ -7,7 +7,7 @@ const Button = ({ variant }) => {
 
   return (
     <button className={buttonClass}>
-      {variant.icon && (
+      {variant.variant === 'icon' && (
         <div>
           <MagGlassIcon />
         </div>

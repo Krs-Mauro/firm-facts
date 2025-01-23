@@ -1,8 +1,10 @@
 const getCardStyles = (variant, styles) => {
-  const classes = [styles.card]
+  let classes = []
 
-  if (variant === 'border') {
-    classes = styles.borderCard
+  if (variant.variant === 'border') {
+    classes.push(styles.borderCard)
+  } else {
+    classes.push(styles.defaultCard)
   }
 
   if (variant.vertical) {

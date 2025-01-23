@@ -1,4 +1,3 @@
-/* Base button class with common styles */
 .button {
   display: flex;
   flex-direction: row;
@@ -14,10 +13,14 @@
   color: white;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: all 1s ease;
+
+  &:hover {
+    background-color: #07c06a;
+    border: 1px solid white;
+  }
 }
 
-/* Default button - single line, no wrap, clip without ellipsis */
 .defaultButton {
   p {
     white-space: nowrap;
@@ -28,19 +31,18 @@
   }
 }
 
-/* Icon button - one or two lines with ellipsis */
 .iconButton {
   p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: calc(100% - 32px - 32px); /* Padding + icon with gap */
+    max-width: calc(100% - 32px - 32px);
     margin: 0;
     word-break: break-word;
   }
-
   div {
     display: flex;
     align-items: center;

@@ -3,58 +3,55 @@
   flex-direction: column;
   width: 364px;
   height: 322px;
-  justify-content: center;
   align-items: center;
   padding: 24px;
   background-color: white;
   min-height: 200px;
-  transition: background-color 1s, border-color 1s;
+  border: 0px solid #07c06a;
+  transition: all 1s ease;
   position: relative;
+
+  .subCard {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    button {
+      transition: all 1s ease;
+    }
+  }
+}
+
+.defaultCard {
+  @extend .card;
+  justify-content: center;
 
   &:hover {
     background-color: #07c06a;
 
-    :global(.button) {
+    button {
       background-color: #07c06a;
       border: 1px solid white;
+      color: white;
     }
-  }
-
-  .subCard {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
 .borderCard {
-  display: flex;
-  flex-direction: column;
-  width: 364px;
-  height: 322px;
-  align-items: center;
-  padding: 24px;
-  background-color: white;
-  min-height: 200px;
-  transition: background-color 1s, border-color 1s;
+  @extend .card;
   justify-content: start;
   padding-top: 40px;
-  position: relative;
 
   &:hover {
     border: 15px solid #07c06a;
 
-    :global(.button) {
+    button {
       background-color: #07c06a;
+      border: 1px solid white;
+      color: white;
     }
-  }
-
-  .subCard {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -69,13 +66,4 @@
   left: 190px;
   top: 250px;
   transform: none;
-}
-
-.text {
-  color: black;
-}
-
-.variantPosition {
-  justify-content: start;
-  padding-top: 40px;
 }
