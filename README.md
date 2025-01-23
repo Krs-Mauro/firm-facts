@@ -9,7 +9,6 @@ on npm:
 ```
 npm i
 npm run dev
-
 ```
 
 on yarn
@@ -17,5 +16,4 @@ on yarn
 ```
 yarn
 yarn dev
-
 ```
