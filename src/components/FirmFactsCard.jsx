@@ -7,9 +7,7 @@ const FirmFactCard = ({ variant }) => {
 
   return (
     <div className={cardClass}>
-      <div className={styles.subCard}>
-        <Button variant={variant.button} />
-      </div>
+      <Button variant={variant.button} />
     </div>
   )
 }

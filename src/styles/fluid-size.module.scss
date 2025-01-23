@@ -1,0 +1,17 @@
+@function fluid-size($min-size, $max-size) {
+  $min-width: 768;
+  $max-width: 1670;
+
+  $slope: calc(($max-size - $min-size) / ($max-width - $min-width));
+  $base-size: $min-size - ($slope * $min-width);
+
+  @return clamp(#{$min-size}px, #{$base-size}px + #{$slope * 100}vw, #{$max-size}px);
+}
+
+@mixin fluid-property($property, $min-size, $max-size) {
+  #{$property}: #{$min-size}px; // Default size below 768px
+
+  @media (min-width: 768px) {
+    #{$property}: fluid-size($min-size, $max-size);
+  }
+}

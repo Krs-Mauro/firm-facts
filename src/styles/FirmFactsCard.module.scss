@@ -1,26 +1,19 @@
+@import './fluid-size.module';
+
 .card {
   display: flex;
   flex-direction: column;
-  width: 364px;
-  height: 322px;
+  width: fluid-size(166, 364);
+  height: fluid-size(147, 322);
   align-items: center;
   padding: 24px;
   background-color: white;
-  min-height: 200px;
   border: 0px solid #07c06a;
   transition: all 1s ease;
   position: relative;
 
-  .subCard {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-    button {
-      transition: all 1s ease;
-    }
+  button {
+    transition: all 1s ease;
   }
 }
 
@@ -58,12 +51,4 @@
 .verticalCard {
   grid-row: span 2;
   height: 100%;
-}
-
-.cursorIcon {
-  display: block;
-  position: absolute;
-  left: 190px;
-  top: 250px;
-  transform: none;
 }
