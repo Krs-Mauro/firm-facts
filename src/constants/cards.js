@@ -8,6 +8,7 @@ const CARDS = [
     cursorIcon: false,
     vertical: true,
     button: {
+      variant: 'icon',
       text: 'This is a two line button that terminates with...',
       icon: true,
       background: 'default',
@@ -17,12 +18,14 @@ const CARDS = [
   },
   {
     id: 2,
+    variant: 'default',
     background: 'variant',
     border: 'default',
     position: 'default',
     text: null,
     cursorIcon: true,
     button: {
+      variant: 'icon',
       text: 'This is a two line button that terminates with...',
       icon: true,
       background: 'variant',
@@ -32,12 +35,14 @@ const CARDS = [
   },
   {
     id: 3,
+    variant: 'default',
     background: 'default',
     border: 'default',
     position: 'default',
     text: null,
     cursorIcon: false,
     button: {
+      variant: 'default',
       text: 'This is a one line button',
       icon: false,
       background: 'default',
@@ -47,12 +52,14 @@ const CARDS = [
   },
   {
     id: 4,
+    variant: 'default',
     background: 'default',
     border: 'default',
     position: 'default',
     text: null,
     cursorIcon: false,
     button: {
+      variant: 'icon',
       text: 'This is a two line button that terminates with...',
       icon: true,
       background: 'default',
@@ -62,12 +69,14 @@ const CARDS = [
   },
   {
     id: 5,
+    variant: 'border',
     background: 'default',
     border: 'default',
     position: 'variant',
     text: 'initial',
     cursorIcon: false,
     button: {
+      variant: 'icon',
       text: 'This is a two line button that terminates with...',
       icon: true,
       background: 'default',
@@ -77,12 +86,14 @@ const CARDS = [
   },
   {
     id: 6,
+    variant: 'border',
     background: 'default',
     border: 'default',
     position: 'variant',
     text: 'disabled',
     cursorIcon: false,
     button: {
+      variant: 'icon',
       text: 'This is a two line button that terminates with...',
       icon: true,
       background: 'default',
@@ -92,12 +103,14 @@ const CARDS = [
   },
   {
     id: 7,
+    variant: 'border',
     background: 'default',
     border: 'variant',
     position: 'variant',
     text: 'hover',
     cursorIcon: true,
     button: {
+      variant: 'icon',
       text: 'This is a two line button that terminates with...',
       icon: true,
       background: 'variant',

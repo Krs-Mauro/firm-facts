@@ -1,30 +1,52 @@
+/* Base button class with common styles */
 .button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 19px;
-  width: 100%;
-  gap: 8px;
+  width: 310px;
+  height: 70px;
   padding: 12px 16px;
+  gap: 8px;
   border-radius: 100px;
   background-color: #2d3e4e;
   color: white;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  overflow: hidden;
-  width: 310px;
-  height: 70px;
-  word-wrap: break-word;
-  white-space: normal;
 }
 
-.variantBackground {
-  background-color: #07c06a;
+/* Default button - single line, no wrap, clip without ellipsis */
+.defaultButton {
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    max-width: calc(100% - 32px);
+    margin: 0;
+  }
 }
 
-.variantBorder {
-  border: 1px solid white;
+/* Icon button - one or two lines with ellipsis */
+.iconButton {
+  p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 32px - 32px); /* Padding + icon with gap */
+    margin: 0;
+    word-break: break-word;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
 }
 
 .variantDisabled {

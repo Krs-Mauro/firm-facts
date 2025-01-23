@@ -8,8 +8,47 @@
   padding: 24px;
   background-color: white;
   min-height: 200px;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 1s, border-color 1s;
   position: relative;
+
+  &:hover {
+    background-color: #07c06a;
+
+    :global(.button) {
+      background-color: #07c06a;
+      border: 1px solid white;
+    }
+  }
+
+  .subCard {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.borderCard {
+  display: flex;
+  flex-direction: column;
+  width: 364px;
+  height: 322px;
+  align-items: center;
+  padding: 24px;
+  background-color: white;
+  min-height: 200px;
+  transition: background-color 1s, border-color 1s;
+  justify-content: start;
+  padding-top: 40px;
+  position: relative;
+
+  &:hover {
+    border: 15px solid #07c06a;
+
+    :global(.button) {
+      background-color: #07c06a;
+    }
+  }
 
   .subCard {
     display: flex;
@@ -34,18 +73,6 @@
 
 .text {
   color: black;
-}
-
-.defaultCard {
-  background-color: white;
-}
-
-.variantBackground {
-  background-color: #07c06a;
-}
-
-.variantBorder {
-  border: 15px solid #07c06a;
 }
 
 .variantPosition {

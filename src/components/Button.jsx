@@ -12,7 +12,11 @@ const Button = ({ variant }) => {
           <MagGlassIcon />
         </div>
       )}
-      <p>{variant.text}</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi recusandae quos
+        accusantium, omnis molestias veniam hic natus vitae. Eaque nulla odit assumenda atque ea
+        possimus exercitationem, architecto minima. Atque!
+      </p>
     </button>
   )
 }

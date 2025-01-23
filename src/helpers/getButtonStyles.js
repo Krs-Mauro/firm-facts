@@ -2,11 +2,11 @@ const getButtonStyles = (variant, styles) => {
   const baseClass = styles.button
   const classes = [baseClass]
 
-  if (variant.background === 'variant') {
-    classes.push(styles.variantBackground)
+  if (variant.variant === 'default') {
+    classes.push(styles.defaultButton)
   }
-  if (variant.border === 'variant') {
-    classes.push(styles.variantBorder)
+  if (variant.variant === 'icon') {
+    classes.push(styles.iconButton)
   }
   if (variant.disabled) {
     classes.push(styles.variantDisabled)
