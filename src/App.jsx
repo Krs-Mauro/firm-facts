@@ -1,12 +1,8 @@
-function App() {
+import FirmFacts from './components/FirmFacts'
+import './index.scss'
 
-  return (
-    <>
-      <div>
-        hoello sass
-      </div>
-    </>
-  )
+const App = () => {
+  return <FirmFacts />
 }
 
 export default App

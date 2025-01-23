@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 24px;
+  background-color: #2d3748;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover:not(.disabled) {
+    background-color: #38a169;
+  }
+
+  .icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+.default {
+  .text {
+    text-overflow: clip;
+  }
+}
+
+.icon {
+  .text {
+    text-overflow: ellipsis;
+  }
+}
+
+.disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}

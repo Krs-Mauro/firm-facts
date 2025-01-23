@@ -1,0 +1,22 @@
+.container {
+  max-width: 1680px;
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 100px 24px 24px;
+
+  h1 {
+    color: white;
+    font-size: clamp(24px, 3vw, 48px);
+    margin-bottom: 24px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

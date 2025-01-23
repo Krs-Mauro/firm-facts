@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+  background-color: white;
+  min-height: 200px;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &.default {
+    &:hover {
+      background-color: #38a169;
+    }
+  }
+
+  &.border {
+    border: 2px solid #2d3748;
+
+    &:hover {
+      border-color: #38a169;
+    }
+  }
+}
