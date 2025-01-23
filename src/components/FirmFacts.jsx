@@ -19,11 +19,6 @@ const FirmFacts = () => {
 
 export default FirmFacts
 
-/* Wrapper 
-
-background: #2D3E4E;
-
-
 /* Title 
 
 position: absolute;
